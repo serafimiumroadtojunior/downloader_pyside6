@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>461</width>
+    <height>423</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Downloader</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/youtube_img.png</normaloff>icons/youtube_img.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit{
+    border: 1px solid rgba(255, 246, 246,80);
+    border-radius: 10px;
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(62, 75, 75)
+}
+
+QLabel{
+    border-radius: 10px;
+    font-family: Comic Sans MS;
+    color:white;
+    font-size: 16px;
+    background-color: rgb(62, 75, 75);
+    border:none;
+} 
+
+QWidget{
+    background-color: rgb(22, 54, 56);
+}
+
+QPushButton{
+    background-color: rgba(116, 63, 240,90);
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    border: 1px solid rgba(247,247,247,80);
+    border-radius: 10px;
+    color: white;
+}
+
+QPushButton:hover{
+    opacity: 0.2;
+    transition: all 0.5s;
+}
+
+QPushButton:pressed{
+    background-color: rgba(116, 63, 240,90);
+	border: 1px solid rgba(247,247,247,80);
+}
+
+QFrame{
+    background-color: rgb(62, 75, 75);
+    border-radius: 10px;
+    border: none;
+} 
+
+QComboBox{
+    font-family: Comic Sans MS;
+    font-size: 16px;
+    background-color:rgb(86, 83, 90);
+    border-radius: 10px;
+    border:1px solid rgb(113, 111, 117);
+	color:white;
+}
+
+QPlainTextEdit{
+	border: 1px solid rgba(247,247,247,80);
+    border-radius: 10px;
+    font-family: Comic Sans MS;
+    font-size: 14px;
+    color: white;
+    background-color:rgb(86, 83, 90)
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="WORK_FRAME">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>441</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="DOWNLOAD_BUTTON">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>330</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Download</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>icons/download-img.png</normaloff>icons/download-img.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="HELLO_LABEL">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>20</y>
+       <width>251</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Welcome! Fill in the lines below</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="LINK_LABEL">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>92</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Link :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LINK_CHOICE">
+     <property name="geometry">
+      <rect>
+       <x>82</x>
+       <y>99</y>
+       <width>331</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="FILE_LABEL">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>170</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Road to file:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="FILE_CHOICE">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>180</y>
+       <width>281</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="RESULT_LABEL">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>250</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
